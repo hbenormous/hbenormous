@@ -1,0 +1,54 @@
+{
+
+	"name" : "Haxball RPG",
+
+	"width" : 420,
+
+	"height" : 200,
+
+	"spawnDistance" : 170,
+
+	"bg" : { "type" : "grass" },
+
+	"vertexes" : [
+		/* 0 */ { "x" : 417.5, "y" : -197.734375, "_selected" : true },
+		/* 1 */ { "x" : 418.5, "y" : 197.265625, "_selected" : true },
+		/* 2 */ { "x" : -417.5, "y" : -197.734375, "_selected" : true },
+		/* 3 */ { "x" : -418.5, "y" : 197.265625 }
+
+	],
+
+	"segments" : [
+		{ "v0" : 0, "v1" : 1, "_selected" : true },
+		{ "v0" : 2, "v1" : 3 },
+		{ "v0" : 2, "v1" : 0, "_selected" : true },
+		{ "v0" : 3, "v1" : 1 }
+
+	],
+
+	"goals" : [
+		
+
+	],
+
+	"discs" : [
+		
+
+	],
+
+	"planes" : [
+		{ "dist" : -417.5, "normal" : [1,0 ] },
+		{ "dist" : -417.5, "normal" : [-1,0 ] },
+		{ "dist" : -198.734375, "normal" : [0,1 ] },
+		{ "dist" : -198.734375, "normal" : [0,-1 ] }
+
+	],
+
+	"traits" : {
+		"ballArea" : { "vis" : false, "bCoef" : 1, "cMask" : ["ball" ] },
+		"goalPost" : { "radius" : 8, "invMass" : 0, "bCoef" : 0.5 },
+		"goalNet" : { "vis" : true, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		"kickOffBarrier" : { "vis" : false, "bCoef" : 0.1, "cGroup" : ["redKO","blueKO" ], "cMask" : ["red","blue" ] }
+
+	}
+}
